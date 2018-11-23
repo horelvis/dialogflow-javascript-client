@@ -28,10 +28,13 @@ export interface IServerResponse {
     id?: string;
     result?: {
         action: string,
+        actionIncomplete: boolean,
         resolvedQuery: string,
-        speech: string;
+        speech: string,
+        parameters: any,
         fulfillment?: {
-            speech: string
+            speech: string,
+            messages: Array<any>
         }
     };
     status: {
