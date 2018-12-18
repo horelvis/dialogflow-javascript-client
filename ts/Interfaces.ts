@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 import {ApiAiConstants} from "./ApiAiConstants";
 
 export interface IRequestOptions {
@@ -34,7 +34,8 @@ export interface IServerResponse {
         parameters: any,
         fulfillment?: {
             speech: string,
-            messages: Array<any>
+            messages: Array<any>,
+            data:any
         }
     };
     status: {
