@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 interface Navigator {
     Resampler: any;
     webkitGetUserMedia: any;
@@ -51,10 +51,6 @@ interface MediaStreamAudioSourceNode extends AudioNode {
 
 }
 
-interface MediaStreamAudioDestinationNode extends AudioNode {
-    stream: MediaStream;
-}
-
 interface AudioBuffer {
     copyFromChannel(destination: Float32Array, channelNumber: number, startInChannel?: number): void;
 
@@ -69,5 +65,5 @@ interface AudioContext {
     suspend(): Promise<void>;
     resume(): Promise<void>;
     close(): Promise<void>;
-    createMediaStreamDestination(): MediaStreamAudioDestinationNode; 
+    createMediaStreamDestination(): MediaStreamAudioDestinationNode;
 }
