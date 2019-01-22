@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 export namespace ApiAiConstants {
   export enum AVAILABLE_LANGUAGES {
     EN = "en" as any, DE = "de" as any, ES = "es" as any, PT_BR = "pt-BR" as any, ZH_HK = "zh-HK" as any,
@@ -25,4 +25,5 @@ export namespace ApiAiConstants {
   export const DEFAULT_BASE_URL: string = "https://api.api.ai/v1/";
   export const DEFAULT_API_VERSION: string = "20150910";
   export const DEFAULT_CLIENT_LANG: AVAILABLE_LANGUAGES = AVAILABLE_LANGUAGES.EN;
+  export const DEFAULT_TTS_HOST: string = "https://api.api.ai/api/tts";
 }

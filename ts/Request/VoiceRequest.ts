@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 import {ApiAiClient} from "../ApiAiClient";
 import {IRequestOptions} from "../Interfaces";
 import Request from "./Request";
@@ -22,7 +22,7 @@ import Request from "./Request";
  * @todo: implement
  */
 
-class VoiceRequest extends Request {
+export class VoiceRequest extends Request {
     constructor(client: ApiAiClient, options: IRequestOptions = {}) {
         super(client, options);
 
